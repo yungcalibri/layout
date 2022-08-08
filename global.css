@@ -1,0 +1,56 @@
+@import './Box/Box.css';
+@import './Center/Center.css';
+@import './Cluster/Cluster.css';
+@import './Cover/Cover.css';
+@import './Frame/Frame.css';
+@import './Grid/Grid.css';
+@import './Icon/Icon.css';
+@import './Impostor/Impostor.css';
+@import './Reel/Reel.css';
+@import './Sidebar/Sidebar.css';
+@import './Stack/Stack.css';
+@import './Switcher/Switcher.css';
+
+:root {
+  font-size: calc(1rem + 0.35vw);
+}
+
+/* Lengths */
+:root {
+  /* Root ratio: 1:√2 */
+  --scale: 1.414;
+  --s5:  calc(var(--s4)  * var(--scale));
+  --s4:  calc(var(--s3)  * var(--scale));
+  --s3:  calc(var(--s2)  * var(--scale));
+  --s2:  calc(var(--s1)  * var(--scale));
+  --s1:  calc(var(--s0)  * var(--scale));
+  --s0:  1rem;
+  --s-1: calc(var(--s0)  / var(--scale));
+  --s-2: calc(var(--s-1) / var(--scale));
+  --s-3: calc(var(--s-2) / var(--scale));
+  --s-4: calc(var(--s-3) / var(--scale));
+  --s-5: calc(var(--s-4) / var(--scale));
+}
+
+:root {
+  --measure: 70ch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  max-inline-size: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+section {
+  max-inline-size: none;
+}
