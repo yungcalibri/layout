@@ -43,8 +43,9 @@ export default class Cover extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['centered', 'space', 'minHeight', 'noPad'];
+  static get observedAttributes() {
+    return ['centered', 'space', 'minHeight', 'noPad'];
+  }
 
   get centered() {
     return this.getAttribute('centered') || 'h1';

@@ -10,23 +10,3 @@ import Reel     from './Reel/Reel.js';
 import Sidebar  from './Sidebar/Sidebar.js';
 import Stack    from './Stack/Stack.js';
 import Switcher from './Switcher/Switcher.js';
-
-if ('customElements' in window) {
-  const els = [
-    ['box-l',      Box],
-    ['center-l',   Center],
-    ['cluster-l',  Cluster],
-    ['cover-l',    Cover],
-    ['frame-l',    Frame],
-    ['grid-l',     Grid],
-    ['icon-l',     Icon],
-    ['impostor-l', Impostor],
-    ['reel-l',     Reel],
-    ['sidebar-l',  Sidebar],
-    ['stack-l',    Stack],
-    ['switcher-l', Switcher],
-  ];
-  for ([el, src] in els) {
-    customElements.define(el, src);
-  }
-}

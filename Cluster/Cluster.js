@@ -27,8 +27,9 @@ export default class Cluster extends HTMLElement {
     };
   }
 
-  static get observedAttributes = () =>
-    ['justify', 'align', 'space'];
+  static get observedAttributes() {
+    return ['justify', 'align', 'space'];
+  }
 
   get justify() {
     return this.getAttribute('justify') || 'flex-start';
@@ -60,5 +61,5 @@ export default class Cluster extends HTMLElement {
 }
 
 if ('customElements' in window) {
-  customElements.define(Cluster);
+  customElements.define('cluster-l', Cluster);
 }

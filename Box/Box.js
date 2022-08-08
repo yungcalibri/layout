@@ -28,8 +28,9 @@ export default class Box extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['padding', 'borderWidth'];
+  static get observedAttributes() {
+    return ['padding', 'borderWidth'];
+  }
 
   get padding() {
     return this.getAttribute('padding') || 'var(--s1)'; 

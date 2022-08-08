@@ -30,8 +30,9 @@ export default class Grid extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['min', 'space'];
+  static get observedAttributes() {
+    return ['min', 'space'];
+  }
 
   get min() {
     return this.getAttribute('min') || '250px';

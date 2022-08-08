@@ -41,8 +41,9 @@ export default class Sidebar extends HTMLElement {
     };
   }
 
-  static get observedAttributes = () =>
-    ['side', 'sideWidth', 'contentMin', 'space', 'noStretch'];
+  static get observedAttributes() {
+    return ['side', 'sideWidth', 'contentMin', 'space', 'noStretch'];
+  }
 
   get side() {
     return this.getAttribute('side') || 'left';

@@ -33,8 +33,9 @@ export default class Impostor extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['breakout', 'margin', 'fixed'];
+  static get observedAttributes() {
+    return ['breakout', 'margin', 'fixed'];
+  }
 
   get breakout() {
     return this.hasAttribute('breakout');

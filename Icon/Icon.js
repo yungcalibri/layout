@@ -35,7 +35,9 @@ export default class Icon extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () => ['space', 'label'];
+  static get observedAttributes() { 
+    return ['space', 'label'];
+  }
 
   connectedCallback() {
     this.render();

@@ -43,8 +43,9 @@ export default class Center extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['max', 'andText', 'gutters', 'intrinsic'];
+  static get observedAttributes() {
+    return ['max', 'andText', 'gutters', 'intrinsic'];
+  }
   connectedCallback() {
     this.render();
   }

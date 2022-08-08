@@ -30,7 +30,9 @@ export default class Frame extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () => ['ratio'];
+  static get observedAttributes() {
+    return ['ratio'];
+  }
 
   get ratio() {
     return this.getAttribute('ratio') || '16:9';

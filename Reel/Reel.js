@@ -53,8 +53,9 @@ export default class Reel extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['itemWidth', 'space', 'height', 'noBar'];
+  static get observedAttributes() {
+    return ['itemWidth', 'space', 'height', 'noBar'];
+  }
 
   get itemWidth() {
     return this.getAttribute('itemWidth') || 'auto';

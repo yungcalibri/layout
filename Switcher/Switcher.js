@@ -33,8 +33,9 @@ export default class Switcher extends HTMLElement {
     }
   }
 
-  static get observedAttributes = () =>
-    ['threshold', 'space', 'limit'];
+  static get observedAttributes() {
+    return ['threshold', 'space', 'limit'];
+  }
 
   get threshold() {
     return this.getAttribute('threshold') || 'var(--measure)';
