@@ -1,9 +1,13 @@
-name: build
+name: build/release
 
-on: push
+on:
+  push:
+    branches: master
+  release:
+    types: [created]
 
 jobs:
-  build:
+  build-and-release:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,3 +25,9 @@ jobs:
 
       - name: build
         run: npm run build
+
+      - name: release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
+        run: npm publish
