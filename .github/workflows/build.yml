@@ -1,12 +1,31 @@
 name: build/release
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
-  build-and-release:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: check out repo
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: npm
+
+      - name: npm install
+        run: npm ci
+
+      - name: build
+        run: npm run build
+
+on: release
+
+jobs:
+  release:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,5 +47,4 @@ jobs:
       - name: release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
         run: npm publish
