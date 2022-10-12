@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  - name: build and release
+  build-and-release:
     runs-on: ubuntu-latest
 
     steps:
