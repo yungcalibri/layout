@@ -17,7 +17,9 @@ export default class Frame extends HTMLElement {
       this.i = `Frame-${this.ratio}`;
       this.dataset.i = this.i;
       if (!document.getElementById(this.i)) {
-        const [numerator, denominator] = this.ratio.split(':');
+        const parts = this.ratio.split(':');
+        const numerator = parts[0];
+        const denominator = parts[1];
         let styleEl = document.createElement('style');
         styleEl.id = this.i;
         styleEl.innerHTML = `
