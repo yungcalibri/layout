@@ -28,5 +28,5 @@ jobs:
       - name: release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: github.event_name === 'release' && github.event.action === 'created'
+        if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
         run: npm publish
