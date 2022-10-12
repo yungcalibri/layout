@@ -1,11 +1,14 @@
 {
   "name": "@yungcalibri/layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "every-layout custom components",
   "source": "src/index.js",
   "main": "dist/bundle.js",
   "module": "umd/bundle.js",
-  "files": ["dist", "umd"],
+  "files": [
+    "dist",
+    "umd"
+  ],
   "repository": "https://github.com/yungcalibri/layout.git",
   "author": "yung calibri <yungcalibri@protonmail.com>",
   "license": "UNLICENSED",
