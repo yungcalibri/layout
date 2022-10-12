@@ -1,0 +1,16 @@
+{
+  "name": "layout",
+  "version": "0.0.1",
+  "description": "every-layout custom components",
+  "main": "index.js",
+  "repository": "https://github.com/yungcalibri/layout.git",
+  "author": "yung calibri <yungcalibri@protonmail.com>",
+  "license": "UNLICENSED",
+  "private": false,
+  "devDependencies": {
+    "esbuild": "^0.15.10"
+  },
+  "scripts": {
+    "build": "esbuild index.js --outfile=dist/bundle.js --bundle --minify --target=chrome88,safari15,firefox89,edge15"
+  }
+}
