@@ -5,6 +5,7 @@
   "source": "src/index.js",
   "main": "dist/bundle.js",
   "module": "umd/bundle.js",
+  "files": ["umd/bundle.js"],
   "repository": "https://github.com/yungcalibri/layout.git",
   "author": "yung calibri <yungcalibri@protonmail.com>",
   "license": "UNLICENSED",
