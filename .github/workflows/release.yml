@@ -1,9 +1,9 @@
-name: build
+name: release
 
-on: push
+on: release
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,3 +21,8 @@ jobs:
 
       - name: build
         run: npm run build
+
+      - name: release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish
