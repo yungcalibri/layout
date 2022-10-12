@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 18.x
           cache: npm
+          registry-url: 'https://registry.npmjs.org'
 
       - name: npm install
         run: npm ci
@@ -28,6 +29,6 @@ jobs:
 
       - name: release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
         run: npm publish
