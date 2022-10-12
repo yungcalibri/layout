@@ -1,5 +1,7 @@
 .npm
+.parcel-cache
 node_modules/
 build/
 dist/
+umd/
 *.log
