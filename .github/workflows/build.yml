@@ -42,5 +42,6 @@ jobs:
         run: npm build
 
       - name: release
-        env: NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: "npm publish"
