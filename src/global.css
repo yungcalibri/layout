@@ -35,6 +35,11 @@
 
 :root {
   --measure: 70ch;
+
+  --color-light: floralwhite;
+  --color-dark: black;
+
+  --border-thin: 1px;
 }
 
 * {
