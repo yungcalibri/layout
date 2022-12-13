@@ -1,6 +1,6 @@
 {
   "name": "@yungcalibri/layout",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "every-layout custom components",
   "source": "src/index.js",
   "main": "dist/bundle.js",
