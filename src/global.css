@@ -10,6 +10,7 @@
 @import './Sidebar/Sidebar.css';
 @import './Stack/Stack.css';
 @import './Switcher/Switcher.css';
+@import './utilities.css';
 
 :root {
   font-size: calc(1rem + 0.35vw);

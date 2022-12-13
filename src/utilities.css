@@ -1,0 +1,239 @@
+/**
+ * Commonly needed utility classes.
+ *
+ * Utility classes are always an override on default behavior, and therefore
+ * they should all be !important.
+ */
+
+.appearance\:none {
+  appearance: none !important;
+}
+
+.display\:none {
+  display: none !important;
+}
+.display\:initial {
+  display: initial !important;
+}
+.display\:flex {
+  display: flex !important;
+}
+.display\:block {
+  display: block !important;
+}
+.display\:grid {
+  display: grid !important;
+}
+
+.justify-content\:start {
+  justify-content: start !important;
+}
+.justify-content\:end {
+  justify-content: end !important;
+}
+.justify-content\:center {
+  justify-content: center !important;
+}
+.justify-content\:space-between {
+  justify-content: space-between !important;
+}
+.justify-content\:space-around {
+  justify-content: space-around !important;
+}
+.justify-content\:space-evenly {
+  justify-content: space-evenly !important;
+}
+
+.align-items\:start {
+  align-items: start !important;
+}
+.align-items\:end {
+  align-items: end !important;
+}
+.align-items\:center {
+  align-items: center !important;
+}
+.align-items\:space-between {
+  align-items: space-between !important;
+}
+.align-items\:space-around {
+  align-items: space-around !important;
+}
+.align-items\:space-evenly {
+  align-items: space-evenly !important;
+}
+
+.text-align\:start {
+  text-align: start !important;
+}
+.text-align\:end {
+  text-align: end !important;
+}
+.text-align\:left {
+  text-align: left !important;
+}
+.text-align\:right {
+  text-align: right !important;
+}
+.text-align\:center {
+  text-align: center !important;
+}
+.text-align\:justify {
+  text-align: justify !important;
+}
+
+.cursor\:none {
+  cursor: none !important;
+}
+.cursor\:default {
+  cursor: default !important;
+}
+.cursor\:pointer {
+  cursor: pointer !important;
+}
+.cursor\:wait {
+  cursor: wait !important;
+}
+.cursor\:not-allowed {
+  cursor: not-allowed !important;
+}
+.cursor\:move {
+  cursor: move !important;
+}
+.cursor\:zoom-in {
+  cursor: zoom-in !important;
+}
+.cursor\:zoom-out {
+  cursor: zoom-out !important;
+}
+
+.object-fit\:fill {
+  object-fit: fill !important;
+}
+.object-fit\:contain {
+  object-fit: contain !important;
+}
+.object-fit\:cover {
+  object-fit: cover !important;
+}
+.object-fit\:none {
+  object-fit: none !important;
+}
+.object-fit\:scale-down {
+  object-fit: scale-down !important;
+}
+
+.overflow\:visible {
+  overflow: visible !important;
+}
+.overflow\:hidden {
+  overflow: hidden !important;
+}
+.overflow\:scroll {
+  overflow: scroll !important;
+}
+.overflow\:auto {
+  overflow: auto !important;
+}
+.overflow-block\:visible {
+  overflow-block: visible !important;
+}
+.overflow-block\:hidden {
+  overflow-block: hidden !important;
+}
+.overflow-block\:scroll {
+  overflow-block: scroll !important;
+}
+.overflow-block\:auto {
+  overflow-block: auto !important;
+}
+.overflow-inline\:visible {
+  overflow-inline: visible !important;
+}
+.overflow-inline\:hidden {
+  overflow-inline: hidden !important;
+}
+.overflow-inline\:scroll {
+  overflow-inline: scroll !important;
+}
+.overflow-inline\:auto {
+  overflow-inline: auto !important;
+}
+
+.pointer-events\:none {
+  pointer-events: none !important;
+}
+.pointer-events\:auto {
+  pointer-events: auto !important;
+}
+
+.position\:static {
+  position: static !imoprtant;
+}
+.position\:relative {
+  position: relative !imoprtant;
+}
+.position\:absolute {
+  position: absolute !imoprtant;
+}
+.position\:fixed {
+  position: fixed !imoprtant;
+}
+.position\:sticky {
+  position: sticky !imoprtant;
+}
+
+.vertical-align\:baseline {
+  vertical-align: baseline !important;
+}
+.vertical-align\:top {
+  vertical-align: top !important;
+}
+.vertical-align\:middle {
+  vertical-align: middle !important;
+}
+.vertical-align\:bottom {
+  vertical-align: bottom !important;
+}
+.vertical-align\:sub {
+  vertical-align: sub !important;
+}
+.vertical-align\:super {
+  vertical-align: super !important;
+}
+.vertical-align\:text-top {
+  vertical-align: text-top !important;
+}
+
+.visibility\:hidden {
+  visibility: hidden !important;
+}
+
+.white-space\:normal {
+  white-space: normal !important;
+}
+.white-space\:nowrap {
+  white-space: nowrap !important;
+}
+.white-space\:pre {
+  white-space: pre !important;
+}
+.white-space\:pre-wrap {
+  white-space: pre-wrap !important;
+}
+.white-space\:pre-line {
+  white-space: pre-line !important;
+}
+.white-space\:break-spaces {
+  white-space: break-spaces !important;
+}
+
+.word-break\:normal {
+  word-break: normal !important;
+}
+.word-break\:break-all {
+  word-break: break-all !important;
+}
+.word-break\:keep-all {
+  word-break: keep-all !important;
+}
