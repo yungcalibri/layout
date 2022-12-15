@@ -19,10 +19,6 @@ export default class Box extends HTMLElement {
             padding: ${this.padding};
             border: ${this.borderWidth} solid;
           }
-          [data-i="${this.i}"] * {
-            color: inherit;
-            background-color: inherit;
-          }
         `.replace(/\s\s+/g, ' ').trim();
         document.head.appendChild(styleEl);
       }
