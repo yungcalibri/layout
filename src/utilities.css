@@ -168,19 +168,19 @@
 }
 
 .position\:static {
-  position: static !imoprtant;
+  position: static !important;
 }
 .position\:relative {
-  position: relative !imoprtant;
+  position: relative !important;
 }
 .position\:absolute {
-  position: absolute !imoprtant;
+  position: absolute !important;
 }
 .position\:fixed {
-  position: fixed !imoprtant;
+  position: fixed !important;
 }
 .position\:sticky {
-  position: sticky !imoprtant;
+  position: sticky !important;
 }
 
 .vertical-align\:baseline {

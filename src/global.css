@@ -12,10 +12,6 @@
 @import './Switcher/Switcher.css';
 @import './utilities.css';
 
-:root {
-  font-size: calc(1rem + 0.35vw);
-}
-
 /* Lengths */
 :root {
   /* Root ratio: 1:√2 */
@@ -36,10 +32,15 @@
 :root {
   --measure: 70ch;
 
+  /* default colors (for Box borders, Reel thumb, etc.) */
   --color-light: floralwhite;
   --color-dark: black;
 
+  /* default thin border */
   --border-thin: 1px;
+
+  /* default item size for Reel */
+  --item-width: 15vw;
 }
 
 * {

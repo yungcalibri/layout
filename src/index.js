@@ -10,6 +10,7 @@ import Reel     from './Reel/Reel.js';
 import Sidebar  from './Sidebar/Sidebar.js';
 import Stack    from './Stack/Stack.js';
 import Switcher from './Switcher/Switcher.js';
+import './global.css';
 
 export {
   Box,
